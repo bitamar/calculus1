@@ -73,7 +73,7 @@ Calculus I - Assignment I
 \end_layout
 
 \begin_layout Author
-Itamar Bar-Lev 039527627
+Itamar Shapira Bar-Lev 039527627
 \end_layout
 
 \begin_layout Section
@@ -102,11 +102,11 @@ Let
 \begin_inset Formula $(1+1)^{2n}=\stackrel[k=0]{2n}{\sum}{2n \choose k}1^{2n-k}1^{k}=\stackrel[k=0]{2n}{\sum}{2n \choose k}={2n \choose 0}+{2n \choose 1}+\cdots+\mathbf{{2n \choose n}}+\cdots+{2n \choose 2n}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
-According to Question 29c (p.
+According to Question 29.c (p.
  47), 
 \begin_inset Formula ${n \choose i}\in\mathbb{N}$
 \end_inset
@@ -116,7 +116,7 @@ According to Question 29c (p.
 \end_inset
 
 .
- Therefore 
+ We found that 
 \begin_inset Formula $4^{n}$
 \end_inset
 
@@ -124,15 +124,15 @@ According to Question 29c (p.
 \begin_inset Formula ${2n \choose n}$
 \end_inset
 
- and other positive integers, thus 
+ and other 
+\begin_inset Formula $2n$
+\end_inset
+
+ positive integers, therefore 
 \begin_inset Formula $4^{n}>{2n \choose n}$
 \end_inset
 
-, for every 
-\begin_inset Formula $n\in\mathbb{N}$
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -143,6 +143,13 @@ According to Question 29c (p.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula ${2n \choose k}=\frac{(2n)!}{k!(2n-k)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 For 
 \begin_inset Formula $n=1$
 \end_inset
@@ -162,7 +169,7 @@ For
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Let 
 \begin_inset Formula $n\in\mathbb{N}$
 \end_inset
@@ -171,7 +178,84 @@ Let
 \begin_inset Formula ${2n \choose n}\geq\frac{4^{n}}{2n+1}$
 \end_inset
 
-.???
+.
+ We'll show 
+\begin_inset Formula ${2(n+1) \choose n+1}\geq\frac{4^{n+1}}{2(n+1)+1}=\frac{4^{n+1}}{2n+3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula ${2n \choose n}=\frac{(2n)!}{(2n-n)!n!}=\frac{(2n!)}{n!n!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula ${2(n+1) \choose n+1}=\frac{(2n+2)!}{\left(2n+2-(n+1)\right)!(n+1)!}=\frac{(2n+2)!}{\left(n+1\right)!(n+1)!}=\frac{(2n)!(n+1)(n+2)}{n!(n+1)n!(n+1)}=\frac{(2n)!}{n!n!}\cdot\frac{(n+1)(n+2)}{(n+1)(n+1)}={2n \choose n}\cdot\frac{n+2}{n+1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{n+2}{n+1}>1$
+\end_inset
+
+ , 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula ${2n \choose n}\geq\frac{4^{n}}{2n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula ${2(n+1) \choose n+1}\geq\frac{n+2}{n+1}\cdot\frac{4^{n}}{2n+1}=\frac{(n+2)4^{n}}{2n^{2}+3n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $n>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula ${2n \choose n}\cdot\frac{n+2}{n+1}\geq\frac{4^{n}}{2n+1}\cdot\frac{n+2}{n+1}=\frac{(n+2)\cdot4^{n}}{(n+1)(2n+1)}=\frac{(n+2)4^{n}}{2n^{2}+3n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{4^{n}}{2n+1}\cdot\frac{n+2}{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula ${2n \choose n}\cdot\frac{4}{n+1}\geq\frac{4^{n}}{2n+1}\cdot\frac{4}{n+1}=\frac{4^{n+1}}{2n^{2}+3n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\frac{(n+2)4^{n}}{2n^{2}+3n+1}<\frac{4^{n+1}}{2n+3}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -397,14 +481,6 @@ Let
 \end_inset
 
 
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-\begin_inset Formula $|x|\cdot|x|=x^{2}$
-\end_inset
-
- (Need to prove?)
 \end_layout
 
 \begin_layout Itemize
@@ -824,6 +900,126 @@ Conclusion
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Q6
+\end_layout
+
+\begin_layout Subsection
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $(1,\infty)$
+\end_inset
+
+.
+ We'll prove 
+\begin_inset Formula $B=\left\{ \frac{a}{n}\mid a\in A,n\in\mathbb{N}\right\} $
+\end_inset
+
+ is dense in 
+\begin_inset Formula $(0,1)$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $A'=A\cap(1,\infty)$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $B'=\{\frac{a}{\left\lceil a\right\rceil }\mid a\in A'\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A'\subset A$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall a\in A',\left\lceil a\right\rceil \in\mathbb{N}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $B'\subset B$
+\end_inset
+
+.
+ So prooving 
+\begin_inset Formula $B'$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $(0,1)$
+\end_inset
+
+ will also prove 
+\begin_inset Formula $B$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $(0,1)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\frac{a_{1}}{\left\lceil a_{1}\right\rceil },\frac{a_{2}}{\left\lceil a_{2}\right\rceil }\in B'$
+\end_inset
+
+, such that 
+\begin_inset Formula $\frac{a_{1}}{\left\lceil a_{1}\right\rceil }<\frac{a_{2}}{\left\lceil a_{2}\right\rceil }$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a_{1},a_{2}\in A'$
+\end_inset
+
+, and 
+\begin_inset Formula $1<a_{1}<a_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A'$
+\end_inset
+
+ is dense, thus 
+\begin_inset Formula $\exists z\in A'$
+\end_inset
+
+ such that 
+\begin_inset Formula $1<a_{1}<z<a_{2}$
+\end_inset
+
+.
+ Also 
+\begin_inset Formula $1<\left\lceil a_{1}\right\rceil \leq\left\lceil z\right\rceil \leq\left\lceil a_{2}\right\rceil $
+\end_inset
+
+, thus 
+\begin_inset Formula $\frac{1}{\left\lceil a_{1}\right\rceil }\leq\frac{1}{\left\lceil z\right\rceil }\leq\frac{1}{\left\lceil a_{2}\right\rceil }$
+\end_inset
+
+, and according to 1.? 
+\begin_inset Formula $\frac{a_{1}}{\left\lceil a_{1}\right\rceil }\leq\frac{z}{\left\lceil z\right\rceil }\leq\frac{a_{2}}{\left\lceil a_{2}\right\rceil }$
+\end_inset
+
+.
 \end_layout
 
 \end_body
