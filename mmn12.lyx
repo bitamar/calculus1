@@ -204,7 +204,11 @@ We'll choose
 \begin_inset Formula $\left|\frac{2n^{2}+1}{n^{2}-1}-2\right|<\varepsilon$
 \end_inset
 
- 
+.
+\end_layout
+
+\begin_layout Standard
+\align right
 \begin_inset Formula $\blacksquare$
 \end_inset
 
@@ -258,7 +262,7 @@ Divergent sequence
 \end_layout
 
 \begin_layout Subsection
-\begin_inset Formula $\left(\left\langle \sqrt{n}\right\rangle \right)$
+\begin_inset Formula $\left(\left\langle \sqrt{n}\right\rangle \right)_{n=1}^{\infty}$
 \end_inset
 
  is divergent
@@ -381,7 +385,7 @@ But
 \end_layout
 
 \begin_layout Subsubsection*
-\begin_inset Formula $0<L\leq1$
+\begin_inset Formula $L>0$
 \end_inset
 
 :
@@ -413,11 +417,82 @@ Assuming by contradiction
 \end_layout
 
 \begin_layout Standard
+That is 
 \begin_inset Formula $|\left\langle \sqrt{n}\right\rangle -L|<\frac{L}{2}$
 \end_inset
 
 .
+ Let's look at 
+\begin_inset Formula $N^{2}$
+\end_inset
+
+.
  
+\begin_inset Formula $N^{2}\in\mathbb{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $N^{2}>N$
+\end_inset
+
+, therefore 
+\begin_inset Formula $\left|\left\langle \sqrt{N^{2}}\right\rangle -L\right|<\frac{L}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow\left|\left\langle N\right\rangle -L\right|<\frac{L}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow\left|0-L\right|<\frac{L}{2}$
+\end_inset
+
+ 
+\size tiny
+
+\begin_inset Formula $N$
+\end_inset
+
+ is natural.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow L<\frac{L}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow2L<L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow2<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By assuming 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}a_{n}=L$
+\end_inset
+
+ we introduced a contradiction, therefore 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}a_{n}\neq L$
+\end_inset
+
+
 \end_layout
 
 \end_body
