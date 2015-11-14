@@ -187,11 +187,7 @@ We'll choose
 \begin_inset Formula $N=\left\lceil \sqrt{\frac{3}{\varepsilon}+1}\right\rceil $
 \end_inset
 
- (Allowed because 
-\begin_inset Formula $\mathbb{R}$
-\end_inset
-
- is archimedean).
+ (Allowed by the Archimedian property 1.60).
  Then for every 
 \begin_inset Formula $n>N$
 \end_inset
@@ -278,6 +274,150 @@ Let
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $L>1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Assuming by contradiction 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}a_{n}=L$
+\end_inset
+
+: Then in particular for 
+\begin_inset Formula $\varepsilon=\frac{L-1}{2}$
+\end_inset
+
+ there's an 
+\begin_inset Formula $N$
+\end_inset
+
+ such that for any 
+\begin_inset Formula $n>N$
+\end_inset
+
+: 
+\begin_inset Formula $|a_{n}-L|<\varepsilon$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|\left\langle \sqrt{n}\right\rangle -L|<\frac{L-1}{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left\langle \sqrt{n}\right\rangle <1$
+\end_inset
+
+ (According to remark 3, p.
+ 70), and 
+\begin_inset Formula $L>1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-\left\langle \sqrt{n}\right\rangle +L<\frac{L-1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-2\left\langle \sqrt{n}\right\rangle +2L<L-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L<2\left\langle \sqrt{n}\right\rangle -1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But 
+\begin_inset Formula $\left\langle \sqrt{n}\right\rangle <1$
+\end_inset
+
+ (According to remark 3, p.
+ 70).
+ Therefore 
+\begin_inset Formula $2\left\langle \sqrt{n}\right\rangle <2$
+\end_inset
+
+ and 
+\begin_inset Formula $2\left\langle \sqrt{n}\right\rangle -1<1$
+\end_inset
+
+.
+ Thus we found 
+\begin_inset Formula $L<1$
+\end_inset
+
+.
+ Contradicting the assumption 
+\begin_inset Formula $L>1$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $L>1\Rightarrow\underset{n\rightarrow\infty}{\lim}a_{n}\neq L$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $0<L\leq1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Assuming by contradiction 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}a_{n}=L$
+\end_inset
+
+: Then in particular for 
+\begin_inset Formula $\varepsilon=\frac{L}{2}$
+\end_inset
+
+ there's an 
+\begin_inset Formula $N$
+\end_inset
+
+ such that for any 
+\begin_inset Formula $n>N$
+\end_inset
+
+: 
+\begin_inset Formula $|a_{n}-L|<\varepsilon$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|\left\langle \sqrt{n}\right\rangle -L|<\frac{L}{2}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_body
